@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   # Derine Root URL
   root 'pages#index'
+  
   #Define Routes for Pages
   get '/home' => 'pages#home' # override default routes. 
   get '/profile' => 'pages#profile'
